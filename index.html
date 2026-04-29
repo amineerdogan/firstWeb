@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Ornegi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #111827;
+      color: #ffffff;
+      padding: 16px 24px;
+    }
+
+    .brand {
+      margin: 0 0 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e5e7eb;
+      padding: 8px 10px;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    nav a:hover {
+      background: #374151;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .sub-menu {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .sub-menu a {
+      text-decoration: none;
+      padding: 6px 10px;
+      background: #e5e7eb;
+      border-radius: 6px;
+      color: #111827;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="brand">Web Sitesi Menusu</h1>
+    <nav aria-label="Ana menu">
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hizmetler.html">Hizmetler</a></li>
+        <li><a href="urunler.html">Urunler</a></li>
+        <li><a href="hakkimizda.html">Hakkimizda</a></li>
+        <li><a href="iletisim.html">Iletisim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="anasayfa" class="card">
+      <h2>Anasayfa</h2>
+      <p>Bu ornek sayfada bir ana menu ve alt menu yerlesimi bulunur.</p>
+    </section>
+
+    <section id="hizmetler" class="card">
+      <h2>Hizmetler</h2>
+      <div class="sub-menu" aria-label="Hizmetler alt menu">
+        <a href="#">Web Tasarim</a>
+        <a href="#">Mobil Uygulama</a>
+        <a href="#">Danismanlik</a>
+      </div>
+    </section>
+
+    <section id="urunler" class="card">
+      <h2>Urunler</h2>
+      <div class="sub-menu" aria-label="Urunler alt menu">
+        <a href="#">Yazilim Paketleri</a>
+        <a href="#">Abonelikler</a>
+        <a href="#">Egitimler</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
